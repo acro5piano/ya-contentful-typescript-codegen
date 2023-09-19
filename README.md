@@ -1,0 +1,1 @@
+# ya-contentful-typescript-codegen
