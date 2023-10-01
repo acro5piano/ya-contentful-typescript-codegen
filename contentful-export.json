@@ -1,0 +1,73 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "id": "blog",
+        "type": "ContentType",
+        "createdAt": "2022-09-10T02:07:22.031Z",
+        "updatedAt": "2023-08-21T00:45:46.023Z"
+      },
+      "displayField": "title",
+      "name": "Blog",
+      "description": "MonCargoのブログ",
+      "fields": [
+        {
+          "id": "publishDate",
+          "name": "publish date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "content",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "arr",
+          "name": "array",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
